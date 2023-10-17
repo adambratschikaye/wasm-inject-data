@@ -1,0 +1,18 @@
+[package]
+name = "wasm-inject-data"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+wasmparser = "0.109.0"
+wasm-encoder = "0.31.0"
+
+[[bin]]
+name = "inject"
+path = "src/inject.rs"
+
+[[bin]]
+name = "static-wasm"
+path = "src/static_wasm.rs"
